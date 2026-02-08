@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TaskVA - Task Management for Virtual Assistants",
-  description: "The ultimate task management platform designed specifically for Virtual Assistants. Manage multiple clients, prioritize tasks, and deliver exceptional results.",
+  title: "TaskFlow - Task Management for Productivity",
+  description: "The ultimate task management platform designed to help you organize tasks, prioritize work, and achieve your goals.",
 };
 
 export default function RootLayout({ children }) {

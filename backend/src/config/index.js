@@ -19,9 +19,18 @@ module.exports = {
   //   expiresIn: process.env.JWT_EXPIRES_IN || '24h',
   // },
 
+  // Email configuration
+  email: {
+    host: process.env.EMAIL_HOST || 'smtp.gmail.com',
+    port: process.env.EMAIL_PORT || 587,
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+    from: process.env.EMAIL_FROM || 'TaskFlow <no-reply@taskflow.com>',
+  },
+
   // CORS configuration
   cors: {
-    origin: process.env.ALLOWED_ORIGINS?.split(',') || '*',
+    origin: process.env.ALLOWED_ORIGINS === '*' ? '*' : process.env.ALLOWED_ORIGINS?.split(',') || '*',
     credentials: true,
   },
 };
